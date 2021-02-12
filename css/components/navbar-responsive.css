@@ -1,0 +1,135 @@
+/* para ocultar checkbox */
+#menu-check { 
+    display: none;
+}
+
+.hamburger {
+  width: 60px;
+  height: 45px;
+  display: block;
+  position: relative;
+  right: 55px;
+  top: 30px;
+  margin-right: 15px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  display: none;
+}
+
+.logo-navbar__white {
+  display: none;
+}
+
+.hamburger span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+
+  .hamburger span:nth-child(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .hamburger span:nth-child(2) {
+    top: 12px;
+    transform-origin: left center;
+  }
+  
+  .hamburger span:nth-child(3) {
+    top: 25px;
+    transform-origin: left center;
+  }
+
+  input[type="checkbox"]:checked + .hamburger span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 8px;
+    
+  }
+  
+  input[type="checkbox"]:checked + .hamburger span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  input[type="checkbox"]:checked + .hamburger span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 25.5px;
+    left: 8px;
+    
+  }
+
+  
+@media screen and (max-width: 768px) {
+    .navbar input[type="checkbox"]:checked ~ ul { /* Para mostrar lista */
+      display: block;
+    }
+    .navbar input[type="checkbox"]:checked ~ ul a { /* Para mostrar lista */
+      color: var(--white-color);
+    }
+    .navbar input[type="checkbox"]:checked ~ .hamburger span { /* Para cambiar color del X */
+      background: var(--white-color);
+    
+    }
+    .navbar input[type="checkbox"]:checked ~ .hamburger span { /* Para cambiar color del X */
+      background: var(--white-color);
+    
+    }
+    .navbar input[type="checkbox"]:checked ~ .logo-navbar__white {
+      width: 150px;
+      height: 90px;
+      object-fit: contain;
+      margin-left: 30px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 10;
+    }
+    .hamburger {
+      display: block;
+      z-index: 9;
+      width: 25px;
+      height: 18px;
+    }
+    .navbar ul{
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: black;
+      height: 100vh;
+      width: 100vw;
+
+      color: var(--white-color);
+      display: none; /* para no ver  */
+      z-index: 8; /* se muestra antes de la X */
+      padding-top: 60px;
+
+    }
+    .navbar ul .button-list { /* los botones de share se centren */
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .navbar ul{
+      max-width: 400px;
+      font-size: 20px;
+    }
+    .hamburger {
+      width: 38px;
+      right: 10px;
+    }
+
+}
+

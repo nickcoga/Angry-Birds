@@ -1,0 +1,30 @@
+.logo-navbar img {
+  width: 243.6px;
+  height: 90px;
+  object-fit: contain;
+  margin-left: 30px;
+}
+
+.transition:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 300ms;
+  overflow: hidden;
+}
+
+.logo-footer img {
+  padding: 52px 0px 10px 0px;
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .logo-navbar img {
+    width: 150px;
+  }
+  .logo-footer img {
+    padding: 0px 0px 10px 0px;
+    width: 132px;
+  }
+  
+}

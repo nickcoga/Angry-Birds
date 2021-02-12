@@ -1,0 +1,29 @@
+.games-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 600px;
+    background-image: url(/images/background03.jpg);
+    padding: 80px 43.5px ;
+    }
+
+.gamecard-1c {
+        grid-column-end: span 1;
+      }
+
+@media screen and (max-width: 768px) {
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 350px;
+       /*  grid-gap: 25.6px; */
+        padding: 49px 15px ;
+    }
+
+}

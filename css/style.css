@@ -1,0 +1,14 @@
+@import "./global.css";
+@import "./components/gamecard.css";
+@import "components/banner.css";
+@import "components/separator.css";
+@import "components/buttons.css";
+@import "./components/navbar.css";
+@import "./components/logos.css";
+@import "./components/shared-buttons.css";
+@import "./components/decoration.css";
+@import "./components/navbar-responsive.css";
+@import "./components/footer.css";
+@import "./components/games-grid.css";
+
+@import "./page.css";

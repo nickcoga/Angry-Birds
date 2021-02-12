@@ -1,0 +1,95 @@
+.button-circle {
+  display: block;
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+}
+
+.button-circle_second {
+  display: block;
+  border-radius: 50px;
+  width: 65px;
+  height: 65px;
+}
+
+.btn-share {
+  outline: none;
+  border: none;
+}
+
+.btn-share svg {
+  width: 25.01px;
+  height: 25px;
+}
+
+.button-facebook {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  border: 2px solid var(--blue-color);
+}
+
+.button-facebook:hover {
+  background-color: var(--white-color);
+  color: var(--blue-color);
+}
+
+.button-twitter {
+  background-color: var(--ligthing-blue-color);
+  color: var(--white-color);
+  border: 2px solid var(--ligthing-blue-color);
+}
+
+.button-twitter:hover {
+  background-color: var(--white-color);
+  color: var(--ligthing-blue-color);
+}
+
+.button-youtube {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  border: 2px solid var(--red-color);
+}
+
+.button-youtube:hover {
+  background-color: var(--white-color);
+  color: var(--red-color);
+}
+
+.button-instagram {
+  background-color: var(--midnight-color);
+  color: var(--white-color);
+  border: 2px solid var(--midnight-color);
+}
+
+.button-instagram:hover {
+  background-color: var(--white-color);
+  color: var(--midnight-color);
+}
+
+.button-list {
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  padding: 23px 0px 22px 0px;
+  gap: 3px;
+}
+
+
+@media screen and (max-width: 400px) {
+  .button-circle{
+    width:36px;
+    height: 36px;
+  }
+  
+  .button-circle_second {
+    width: 36px;
+    height: 36px;
+  }
+  .btn-share svg {
+    width: 18px;
+    height: 20px;
+  }
+  .button-list {
+    margin-top: 79px;
+  }
+}

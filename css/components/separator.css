@@ -1,0 +1,40 @@
+
+/* PAra el separador, se puede reusar*/
+.separador{
+    position: relative;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 7;
+    pointer-events: none;
+   /*  width: 100%;
+    height: 100%; */
+}
+.separador__image{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+
+}
+
+.separador>img{
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .separador__image {
+       width: 768px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .separador__image {
+        width: 480px;
+    }
+}

@@ -1,0 +1,42 @@
+body {
+  background-image: url(/images/background03.jpg) ;
+  background-size: cover;
+} 
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  height: 90px;
+  background-color: var(--white-color);
+}
+
+header {
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+max-width: 1200px;
+}
+main {
+  max-width: 1200px;
+}
+.decoration {
+  max-width: 1200px;
+}
+footer {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--black-color);
+  padding: 50px 0px 19px 0px;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    max-width: 400px;
+  }
+  
+}

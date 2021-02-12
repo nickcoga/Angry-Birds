@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oswald&display=swap");
+
+:root {
+  --blue-color: #3b5998;
+  --green-color: #06d6a0;
+  --yellow-color: #ffd166;
+  --yellow-gold: #FFEC00;
+  --red-color: #ef476f;
+  --pink-color: #FF0036;
+  --midnight-color: #073b4c;
+  --red-color: #bb0000;
+  --midnight-color: #517fa4;
+  --light-color: #f8f9fa;
+  --white-color: #ffffff;
+  --gray-color: #888888;
+  --black-color: #1b1c20;
+  --headings-font: "Piazzolla", serif;
+  --oswald-font: "Oswald", sans-serif;
+  --code-color: #f5f5f5;
+  --ligthing-blue-color: #00aced;
+}
+
+
+/* Busco quitar margen y poner por default valores de toda la pagaina*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--oswald-font);
+}

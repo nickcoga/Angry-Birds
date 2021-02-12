@@ -1,0 +1,77 @@
+.button {
+    background: #F8F9FA;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 33px;
+    color: var(--black-color); 
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button--static{
+    
+    background: linear-gradient(180deg, #FFEC00 0%, #FFC600 100%);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15), inset 0px 1px 0px rgba(255, 255, 255, 0.75);
+    position: relative;
+    padding: 12px 30px 12px 55px;
+}
+
+
+.button--animate {
+    background: linear-gradient(180deg, #FFEC00 0%, #FFC600 100%);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15), inset 0px 1px 0px rgba(255, 255, 255, 0.75);
+    position: relative;
+    padding: 12px 30px 12px 55px;
+    transition: padding 0.3s ease;
+
+    overflow: hidden;/*Bug Fix*/  /* Se añadio Para q desaparescan las flechas cuando salen del button */
+}
+
+.button--animate::before{
+    content: '';
+    background: url(../../images/icons/arrow-circle-down-solid.svg);
+    position: absolute;
+    top: 19px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    transition:  0.3s ease-in;
+}
+
+
+.button--animate::after{
+    content: '';
+    background: url(../../images/icons/arrow-circle-down-solid.svg);
+    position: absolute;
+    top:-20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    transition:  0.3s ease-out;
+    opacity: 0;
+}
+
+.button--animate:hover{
+    background: linear-gradient(180deg, #FFEC00 0%, #FFEC00 100%);
+    padding: 12px 55px 12px 30px;
+}
+.button--animate:hover::before {
+   transform: translate(-10px,38px);
+   opacity: 0;
+}
+.button--animate:hover::after {
+   transform: translate(-10px,38px);
+   opacity: 1;
+ }
+
+ @media screen and (max-width: 400px) {
+    .button {
+        font-size: 17px;
+        
+       /*  height: 48.4px; */
+    }
+}

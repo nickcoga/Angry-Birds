@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Page Angry Birds Games">
+    <title>Angry Birds | Official</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+      <!--Navbar-->
+      <header>
+        <div class="logo-navbar transition">
+          <img src="./images/logos/logo-ab-black.png" alt=""/>
+        </div>
+        <nav class="navbar text-navbar">  <!-- Puse los button-share dentro de nav -->
+          <!-- navbar responsive -->
+          <input type="checkbox" name="" id="menu-check">
+          <label for="menu-check" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <img class="logo-navbar__white" src="./images/logos/logo-ab-white.png" alt=""> <!-- segundo logo para mobile -->
+          <!-- End navbar responsive -->
+          <ul>
+            <li><a href="#" class="navbar-a">Movie</a></li>
+            <li class="navbar__color"><a href="#">Games</a></li>
+            <li><a href="#" class="navbar-a">Animatios</a></li>
+            <li><a href="#" class="navbar-a">Shop</a></li>
+            <div class="button-list">
+              <button class="btn-share button-circle button-facebook" aria-label="share button">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fab"
+                  data-icon="facebook-f"
+                  class="svg-inline--fa fa-facebook-f fa-w-10 shared-facebook"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                >
+                  <path
+                    class="path"
+                    fill="currentColor"
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  ></path>
+                </svg>
+              </button>
+    
+              <button class="btn-share button-circle button-twitter" aria-label="share button">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fab"
+                  data-icon="twitter"
+                  class="svg-inline--fa fa-twitter fa-w-16"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                  ></path>
+                </svg>
+              </button>
+    
+              <button class="btn-share button-circle button-youtube" aria-label="share button">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fab"
+                  data-icon="youtube"
+                  class="svg-inline--fa fa-youtube fa-w-18"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                  ></path>
+                </svg>
+              </button>
+    
+              <button class="btn-share button-circle button-instagram" aria-label="share button">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fab"
+                  data-icon="instagram"
+                  class="svg-inline--fa fa-instagram fa-w-14"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </ul>
+
+        </nav>
+
+      </header>
+      <main>
+        <!-- banner -->
+        <div class="banner">
+          <section class="banner__image" style="background-image: url(images/background01.jpg);">
+              <img src="images/foreground1.png" alt="Angry Birds 2">
+              <!-- va el button con <a> -->
+              <a class="button button--animate  " href="#">
+                DOWNLOAD NOW!
+              </a>
+          </section>
+          <div class="separador">
+            <img class="separador__image" src="images/divisor01.svg" alt="">
+          </div>
+          <section class="banner__image" style="background-image: url(images/background02.png);">
+            <img  src="images/foreground2.png" alt="Angry Birds Friends">
+            <!-- va el button con <a> -->
+            <a class="button button--animate " href="#">
+              PLAY NOW!
+            </a>
+          </section>
+        </div>
+        <div class="separador">
+        <img class="separador__image" src="images/divisor02.svg" alt="">
+        </div>
+        <!-- Game-card -->
+        <section class="games-grid">
+          <div class="gamecard-container gamecard-1c">
+            <div class="gamecard-img transition">
+              <img src="./images/games/game1.jpg" alt="pollo rojo" />
+            </div>
+            <div class="gamecard-body">
+              <h3 class="gamecard-subtitle">ANGRY BIRDS DREAM BLAST</h3>
+              <p class="gamecard-txt">
+                Life is a bubble-popping dream in a new puzzle game with a
+                gameplay style never-before-seen in an Angry Birds game.
+              </p>
+              <a class="button button--animate" href="#"> DOWNLOAD </a>
+              <p class="gamercard-link">Read more...</p>
+            </div>
+          </div>
+          <div class="gamecard-container gamecard-1c">
+            <div class="gamecard-img transition">
+              <img src="./images/games/game2.jpg" alt="pollo rojo" />
+            </div>
+            <div class="gamecard-body">
+              <h3 class="gamecard-subtitle">Angry Birds 2</h3>
+              <p class="gamecard-txt">
+                Bigger. Badder. Birdier. The Angry Birds are back in the sequel to
+                the biggest mobile game of all time!
+              </p>
+              <a class="button button--animate" href="#"> DOWNLOAD </a>
+              <p class="gamercard-link">Read more...</p>
+            </div>
+          </div>
+          <div class="gamecard-container">
+            <div class="gamecard-img transition">
+              <img src="./images/games/game3.jpg" alt="pollo rojo" />
+            </div>
+            <div class="gamecard-body">
+              <h3 class="gamecard-subtitle">Angry Birds Match</h3>
+              <p class="gamecard-txt">
+                Match stuff with the adorable Hatchlings from the Angry Birds
+                Movie, collect cute outfits, and get the party started!
+              </p>
+              <a class="button button--animate" href="#"> DOWNLOAD </a>
+              <p class="gamercard-link">Read more...</p>
+            </div>
+          </div>
+          <div class="gamecard-container">
+            <div class="gamecard-img transition">
+              <img src="./images/games/game4.jpg" alt="pollo rojo" />
+            </div>
+            <div class="gamecard-body">
+              <h3 class="gamecard-subtitle">Angry Birds Friends</h3>
+              <p class="gamecard-txt">
+                Challenge your friends, and the world, in a new tournament of six
+                new levels every week.
+              </p>
+              <a class="button button--animate" href="#"> DOWNLOAD </a>
+              <p class="gamercard-link">Read more...</p>
+            </div>
+          </div>
+          <div class="gamecard-container">
+            <div class="gamecard-img transition">
+              <img src="./images/games/game5.jpg" alt="pollo rojo" />
+            </div>
+            <div class="gamecard-body">
+              <h3 class="gamecard-subtitle">Angry Birds Evolution</h3>
+              <p class="gamecard-txt">
+                Collect and evolve over 100 new crazy and colorful Angry Birds,
+                assemble a powerful team, and stop the pigs.
+              </p>
+              <a class="button button--animate" href="#"> DOWNLOAD </a>
+              <p class="gamercard-link">Read more...</p>
+            </div>
+          </div>
+          <div class="gamecard-container">
+            <div class="gamecard-img transition">
+              <img src="./images/games/game6.jpg" alt="pollo rojo" />
+            </div>
+            <div class="gamecard-body">
+              <h3 class="gamecard-subtitle">Angry Birds Blast</h3>
+              <p class="gamecard-txt">
+                The most instantly satisfying Angry Birds game ever. Tap matching
+                balloons to blast the birds to freedom!
+              </p>
+              <a class="button button--animate" href="#"> DOWNLOAD </a>
+              <p class="gamercard-link">Read more...</p>
+            </div>
+          </div>
+          <div class="gamecard-container">
+            <div class="gamecard-img transition">
+              <img src="./images/games/game7.jpg" alt="pollo rojo" />
+            </div>
+            <div class="gamecard-body">
+              <h3 class="gamecard-subtitle">Angry Birds POP</h3>
+              <p class="gamecard-txt">
+                Use your trusty slingshot to match and pop colorful bubbles, save
+                exotic critters, and pop the piggies.
+              </p>
+              <a class="button button--animate" href="#"> DOWNLOAD </a>
+              <p class="gamercard-link">Read more...</p>
+            </div>
+          </div>
+          <div class="gamecard-container">
+            <div class="gamecard-img transition">
+              <img src="./images/games/game8.jpg" alt="pollo rojo" />
+            </div>
+            <div class="gamecard-body">
+              <h3 class="gamecard-subtitle">Angry Birds Transformers</h3>
+              <p class="gamecard-txt">
+                The eggs have sprouted legs, and are transformerizing everything
+                in sight! Is this the end for Piggy Island?
+              </p>
+              <a class="button button--animate" href="#"> DOWNLOAD </a>
+              <p class="gamercard-link">Read more...</p>
+            </div>
+          </div>
+        </section>
+
+      </main>
+      <!-- decoration -->
+      <div class="decoration">
+        <div class="separador">
+          <img class="separador__image" src="images/separator-00.svg" alt="" />
+        </div>
+        <div class="decoration__image"></div>
+        <div class="separador">
+          <img class="separador__image" src="images/separator-10.svg" alt="" />
+        </div>
+      </div>
+      <!--footer-->
+      <footer class="footer text-footer">
+        <ul>
+          <li class="animation-arrow-2">
+            <a class="button-arrow-right navbar-a-w" href="#"> blog </a>
+          </li>
+          <li><a class="button-arrow-right navbar-a-w" href="#">suport</a></li>
+          <li><a class="button-arrow-right navbar-a-w" href="#">rovio.com</a></li>
+          <li><a class="button-arrow-right navbar-a-w" href="#">bring the anger</a></li>
+        </ul>
+
+        <div class="button-list">
+          <button class="btn-share button-circle_second button-facebook" aria-label="share button" >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="facebook-f"
+              class="svg-inline--fa fa-facebook-f fa-w-10 shared-facebook"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                class="path"
+                fill="currentColor"
+                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+              ></path>
+            </svg>
+          </button>
+
+          <button class="btn-share button-circle_second button-twitter" aria-label="share button">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="twitter"
+              class="svg-inline--fa fa-twitter fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+              ></path>
+            </svg>
+          </button>
+
+          <button class="btn-share button-circle_second button-youtube" aria-label="share button">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="youtube"
+              class="svg-inline--fa fa-youtube fa-w-18"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+            >
+              <path
+                fill="currentColor"
+                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+              ></path>
+            </svg>
+          </button>
+
+          <button class="btn-share button-circle_second button-instagram" aria-label="share button">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="instagram"
+              class="svg-inline--fa fa-instagram fa-w-14"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="logo-footer">
+          <img src="./images/logos/logo-rovio.png" alt="logo footer"/>
+        </div>
+        <div class="text-footer_second">
+          <text
+            >© 2009 - 2020 Rovio Entertainment Corporation. All rights
+            Reserved.</text
+          >
+          <text>Privacy policy.</text>
+          <text>EULA.</text>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
